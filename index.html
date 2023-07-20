@@ -18,11 +18,13 @@
         <a-asset-item id="Lmodel03" src="./assets/kingyodaiwa.glb"></a-asset-item>
         <a-asset-item id="Lmodel04" src="./assets/shibatajo.glb"></a-asset-item>
         <a-asset-item id="Lmodel05" src="./assets/text.glb"></a-asset-item>
+        <a-asset-item id="Lmodel06" src="./assets/tsukiokamanju.glb"></a-asset-item>
+        <a-asset-item id="Lmodel07" src="./assets/youkan.glb"></a-asset-item>
     </a-assets>
 
           <a-entity
-          gltf-model="#Lmodel01"
-          position="40 -5 -5"
+          gltf-model="#Lmodel06"
+          position="40 -7 -5"
           rotation="0 0 0"
           scale="100 100 100"
           gps-new-entity-place="latitude: 37.947977; longitude: 139.326888"
@@ -67,6 +69,16 @@
           scale="2.3 2.3 2.3"
           look-at="[gps-camera]"
           gps-new-entity-place="latitude: 37.947977; longitude: 139.326888"
+      >
+    </a-entity>
+
+      <a-entity
+          gltf-model="#Lmodel07"
+          position="20 -7 -10"
+          rotation="0 -60 0"
+          scale="1 1 1"
+          gps-new-entity-place="latitude: 37.947977; longitude: 139.326888"
+         animation="property: rotation; to: 0 300 0; loop: true; dur: 10000; easing: linear;"
       >
     </a-entity>
      
