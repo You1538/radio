@@ -10,149 +10,48 @@
   </head>
 
   <body>
-    <a-scene vr-mode-ui='enabled: false' arjs='sourceType: webcam; videoTexture: true; debugUIEnabled: false' renderer='antialias: true; alpha: true'>
+<a-scene vr-mode-ui="enabled: false" arjs="sourceType: webcam; videoTexture: true; debugUIEnabled: false" renderer="antialias: true; alpha: true" inspector="" keyboard-shortcuts="" screenshot="" device-orientation-permission-ui="">
   
-     <a-assets>
-        <a-asset-item id="Lmodel01" src="./assets/apple.glb"></a-asset-item>
-        <a-asset-item id="Lmodel02" src="./assets/applemove.glb"></a-asset-item>
-        <a-asset-item id="Lmodel03" src="./assets/kingyodaiwa.glb"></a-asset-item>
-        <a-asset-item id="Lmodel04" src="./assets/shibatajo.glb"></a-asset-item>
-        <a-asset-item id="Lmodel05" src="./assets/text.glb"></a-asset-item>
-        <a-asset-item id="Lmodel06" src="./assets/tsukiokamanju.glb"></a-asset-item>
-        <a-asset-item id="Lmodel07" src="./assets/youkan.glb"></a-asset-item>
-        <a-asset-item id="Lmodel08" src="./assets/kashiwamochi.glb"></a-asset-item>
-        <a-asset-item id="Lmodel09" src="./assets/kinunoyuugetsu.glb"></a-asset-item>
-        <a-asset-item id="Lmodel10" src="./assets/piman.glb"></a-asset-item>
-        <a-asset-item id="Lmodel11" src="./assets/tomato.glb"></a-asset-item>
-        <a-asset-item id="Lmodel12" src="./assets/daikon.glb"></a-asset-item>
-      
-    </a-assets>
 
-          <a-entity
-          gltf-model="#Lmodel01"
-          position="0 -3 -30"
-          rotation="0 0 0"
-          scale="3 3 3"
-          gps-new-entity-place="latitude: 37.947977; longitude: 139.326888"
-          animation="property: rotation; to: 0 360 0; loop: true; dur: 10000; easing: linear;"
-           >
+          <a-entity gltf-model="./assets/apple.glb" position="12.01108 -1.92271 -9.1144" rotation="0 -11.22653503779335 0" scale="20 20 20" gps-new-entity-place="latitude: 37.947977; longitude: 139.326888" animation="property: rotation; to: 0 360 0; loop: true; dur: 10000; easing: linear;">
     </a-entity>
 
-        <a-entity
-          gltf-model="#Lmodel02"
-          position="-10 -3 -20"
-          rotation="0 35 0"
-          scale="10 10 10"
-          gps-new-entity-place="latitude: 37.947977; longitude: 139.326888"
-          animation-mixer
-           >
+        <a-entity gltf-model="./assets/applemove.glb" position="1.90426 -2.62032 -17.60858" rotation="" scale="3 3 3" gps-new-entity-place="latitude: 37.947977; longitude: 139.326888" animation-mixer="">
+         </a-entity><a-entity gltf-model="./assets/applemove.glb" position="-10 -3 -20" rotation="" scale="3 3 3" gps-new-entity-place="latitude: 37.947977; longitude: 139.326888" animation-mixer="">
          </a-entity>
 
-     <a-entity
-          gltf-model="#Lmodel03"
-          position="-20 -3 -10"
-          rotation="0 145 0"
-          scale="10 10 10"
-          gps-new-entity-place="latitude: 37.947977; longitude: 139.326888"
-          animation="property: rotation; to: 0 505 0; loop: true; dur: 10000; easing: linear;"
-           >
+     <a-entity gltf-model="./assets/kingyodaiwa.glb" position="-13.16063 -1.21152 -16.93992" rotation="0 18.878386391765495 0" scale="3 3 3" gps-new-entity-place="latitude: 37.947977; longitude: 139.326888" animation="property: rotation; to: 0 505 0; loop: true; dur: 10000; easing: linear;">
         </a-entity>
 
-        <a-entity
-          gltf-model="#Lmodel04"
-          position="-30 -3 0"
-          rotation="0 -60 0"
-          scale="1 1 1"
-          gps-new-entity-place="latitude: 37.947977; longitude: 139.326888"
-         animation="property: rotation; to: 0 300 0; loop: true; dur: 10000; easing: linear;"
-         >
+        <a-entity gltf-model="./assets/shibatajo.glb" position="-38.56197 -1.27019 -14.82976" rotation="0 -49 0" scale="" gps-new-entity-place="latitude: 37.947977; longitude: 139.326888" animation="property: rotation; to: 0 300 0; loop: true; dur: 10000; easing: linear;">
        </a-entity>
 
-        <a-entity
-          gltf-model="#Lmodel05"
-          position="-20 4 10"
-          rotation="0 0 0"
-          scale="2.3 2.3 2.3"
-          look-at="[gps-camera]"
-          gps-new-entity-place="latitude: 37.947977; longitude: 139.326888"
-          >
+        <a-entity gltf-model="./assets/text.glb" position="-19.62007 7.95764 9.81003" rotation="6.126175694914324 116.565 0" scale="2 2 2" look-at="[gps-camera]" gps-new-entity-place="latitude: 37.947977; longitude: 139.326888">
          </a-entity>
 
-      <a-entity
-          gltf-model="#Lmodel06"
-          position="-10 -7 20"
-          rotation="0 0 0"
-          scale="3 3 3"
-          gps-new-entity-place="latitude: 37.947977; longitude: 139.326888"
-         animation="property: rotation; to: 0 300 0; loop: true; dur: 10000; easing: linear;"
-         >
+      <a-entity gltf-model="./assets/tsukiokamanju.glb" position="-14.00009 -7.29501 13.22849" rotation="0 53.990958950767734 0" scale="3 3 3" gps-new-entity-place="latitude: 37.947977; longitude: 139.326888" animation="property: rotation; to: 0 300 0; loop: true; dur: 10000; easing: linear;">
     </a-entity>
 
-     <a-entity
-          gltf-model="#Lmodel07"
-          position="0 -5 30"
-          rotation="0 -60 0"
-          scale="3 3 3"
-          gps-new-entity-place="latitude: 37.947977; longitude: 139.326888"
-         animation="property: rotation; to: 0 300 0; loop: true; dur: 10000; easing: linear;"
-         >
+     <a-entity gltf-model="./assets/youkan.glb" position="0 -7.3541 30" rotation="0 130.49056488324985 0" scale="2 2 2" gps-new-entity-place="latitude: 37.947977; longitude: 139.326888" animation="property: rotation; to: 0 300 0; loop: true; dur: 10000; easing: linear;">
     </a-entity>
 
-     <a-entity
-          gltf-model="#Lmodel08"
-          position="10 -3 20"
-          rotation="0 -60 0"
-          scale="7 7 7"
-          gps-new-entity-place="latitude: 37.947977; longitude: 139.326888"
-         animation="property: rotation; to: 0 300 0; loop: true; dur: 10000; easing: linear;"
-         >
+     <a-entity gltf-model="./assets/kashiwamochi.glb" position="7.35017 -4.26886 9.50421" rotation="0 173.1037279383097 0" scale="5 5 5" gps-new-entity-place="latitude: 37.947977; longitude: 139.326888" animation="property: rotation; to: 0 300 0; loop: true; dur: 10000; easing: linear;">
     </a-entity>
 
-     <a-entity
-          gltf-model="#Lmodel09"
-          position="20 0 10"
-          rotation="0 -60 0"
-          scale="7 7 7"
-          gps-new-entity-place="latitude: 37.947977; longitude: 139.326888"
-         animation="property: rotation; to: 0 300 0; loop: true; dur: 10000; easing: linear;"
-         >
+     <a-entity gltf-model="./assets/kinunoyuugetsu.glb" position="24.7508 -5.79372 11.31236" rotation="0 -120.5950108035454 0" scale="7 7 7" gps-new-entity-place="latitude: 37.947977; longitude: 139.326888" animation="property: rotation; to: 0 300 0; loop: true; dur: 10000; easing: linear;">
     </a-entity>
 
-     <a-entity
-          gltf-model="#Lmodel10"
-          position="30 -2 0"
-          rotation="0 -60 0"
-          scale="7 7 7"
-          gps-new-entity-place="latitude: 37.947977; longitude: 139.326888"
-         animation="property: rotation; to: 0 300 0; loop: true; dur: 10000; easing: linear;"
-         >
+     <a-entity gltf-model="./assets/piman.glb" position="24.23717 -3.9504 -4.06567" rotation="0 -88.692 0" scale="4 4 4" gps-new-entity-place="latitude: 37.947977; longitude: 139.326888" animation="property: rotation; to: 0 300 0; loop: true; dur: 10000; easing: linear;">
     </a-entity>
 
-     <a-entity
-          gltf-model="#Lmodel11"
-          position="20 -5 -10"
-          rotation="0 -60 0"
-          scale="7 7 7"
-          gps-new-entity-place="latitude: 37.947977; longitude: 139.326888"
-         animation="property: rotation; to: 0 300 0; loop: true; dur: 10000; easing: linear;"
-         >
+     <a-entity gltf-model="./assets/tomato.glb" position="18.99659 -2.12425 -8.9453" rotation="0 -59.99999999999999 0" scale="5 5 7" gps-new-entity-place="latitude: 37.948; longitude: 139.327" animation="property: rotation; to: 0 300 0; loop: true; dur: 10000; easing: linear;">
     </a-entity>
 
-     <a-entity
-          gltf-model="#Lmodel12"
-          position="1 -1 -20"
-          rotation="0 -60 0"
-          scale="7 7 7"
-          gps-new-entity-place="latitude: 37.947977; longitude: 139.326888"
-         animation="property: rotation; to: 0 300 0; loop: true; dur: 10000; easing: linear;"
-         >
+     <a-entity gltf-model="./assets/daikon.glb" position="7.51295 -1.27945 -12.35426" rotation="34.64102829360957 41.25124237603388 6.765485644904761" scale="3 3 3" gps-new-entity-place="latitude: 37.948; longitude: 139.327" animation="property: rotation; to: 0 300 0; loop: true; dur: 10000; easing: linear;">
     </a-entity>
      
-      <a-camera
-       gps-camera = 'maxDistance: 1000000; minDistance: 30;'
-       rotation-reader
-       > </a-camera>
+      <a-camera gps-camera="maxDistance: 1000000; minDistance: 30" rotation-reader="" camera="" rotation="-1.9480565034447992 14.667719555349075 0" look-controls="" wasd-controls="" data-aframe-inspector-original-camera=""> </a-camera>
      
-    </a-scene>
+    <div class="a-loader-title" style="display: none;">Location-based AR.js demo</div><a-entity arjs-webcam-texture=""></a-entity></a-scene>
   </body>
 </html>
