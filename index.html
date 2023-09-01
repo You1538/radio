@@ -6,14 +6,15 @@
     <meta charset="utf-8" />
     <title>Location-based AR.js demo</title>
     <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
-<!--    <script type="text/javascript" src="https://raw.githack.com/AR-js-org/AR.js/master/three.js/build/ar-threex-location-only.js"></script> -->
-<!--  -->     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
+<!--    <script type="text/javascript" src="https://raw.githack.com/AR-js-org/AR.js/master/three.js/build/ar-threex-location-only.js"></script> --> 
 <!--    <script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"></script>                           -->
     <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
+   <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
+   <!--  -->    
   </head>
 
   <body>
-<a-scene>
+<a-scene vr-mode-ui="enabled: false" arjs="sourceType: webcam; videoTexture: true; debugUIEnabled: false" renderer="antialias: true; alpha: true"inspector="" keyboard-shortcuts="" screenshot="" device-orientation-permission-ui="">
 
  <a-entity gltf-model="./assets/applemove.glb" position="15.98436 -3.37196 7.50428" rotation="0 -129.642 0" scale="2 2 2" gps-new-entity-place="latitude: 37.948; longitude: 139.327" animation-mixer>
      </a-entity>
