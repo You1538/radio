@@ -18,13 +18,13 @@
   arjs="sourceType: webcam; videoTexture: true; debugUIEnabled: false"
   renderer="logarithmicDepthBuffer: true;">
 
-  <a-camera gps-new-camera="" rotation-reader="" ></a-camera>
+  <a-camera gps-new-camera='gpsMinDistance: 5'></a-camera>
   
      <a-entity
       gltf-model="./assets/text.glb"
       scale="30 30 30"
       look-at="[gps-new-camera]"
-      gps-entity-place="latitude: 37.948011; longitude: 139.327020">
+      gps-new-entity-place="latitude: 37.94781383890853; longitude: 139.32706387291938">
      </a-entity>
   /*      rotation="15.105971378572088 116.0624312232112 0"*/
 
