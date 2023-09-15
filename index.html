@@ -21,7 +21,7 @@
   arjs="sourceType: webcam; videoTexture: true; debugUIEnabled: false"
   renderer="logarithmicDepthBuffer: true;">
 
-  <a-camera gps-new-camera=''></a-camera>
+  <a-camera gps-new-camera='gpsMinDistance: 5;gpsMaxDistance: 20'></a-camera>
   
      <a-entity
       gltf-model="./assets/text.glb"
@@ -45,6 +45,15 @@
        rotation="0 -129.642 0"
        scale="5 5 5"
        gps-new-entity-place="latitude: 37.951767; longitude: 139.327293"
+       >
+     </a-entity>
+
+      <a-entity
+       gltf-model="./assets/poppoyaki_chara.glb"
+       rotation="0 0 0"
+       look-at="[gps-new-camera]"
+       scale="2 2 2"
+       gps-entity-place="latitude: 37.95602110130156; longitude: 139.33796363247833"
        >
      </a-entity>
   
