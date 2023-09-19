@@ -21,7 +21,7 @@
   arjs="sourceType: webcam; videoTexture: true; debugUIEnabled: false"
   renderer="logarithmicDepthBuffer: true;">
 
-  <a-camera gps-new-camera='gpsMaxDistance: 50'></a-camera>
+  <a-camera gps-new-camera='gpsMinDistance: 10;gpsMaxDistance: 50'></a-camera>
   
      <a-entity
       gltf-model="./assets/text.glb"
@@ -49,7 +49,7 @@
      </a-entity>
 
       <a-entity
-       gltf-model="./assets/txet.glb"
+       gltf-model="./assets/text.glb"
        rotation="0 0 0"
        look-at="[gps-new-camera]"
        scale="2 2 2"
