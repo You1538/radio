@@ -13,6 +13,20 @@
     
     <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
     <script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"></script>
+  
+    <style>
+      #debug {
+        position: fixed;
+        z-index: 10000;
+        background-color: #fff;
+        padding: 10px;
+        font-size: 16px;
+        top: 0;
+        left: 0;
+        display: block;
+      }
+    </style>
+    
   </head>
 
   <body>
@@ -56,6 +70,21 @@
        gps-new-entity-place="latitude: 37.95602110130156; longitude: 139.33796363247833"
        >
      </a-entity>
+
+  <script>
+  window.addEventListener('load', () => {
+    const debug = document.getElementById('debug');
+
+    if (debug) {
+      debug.addEventListener('gps-entity-place-update-position', (event) => {
+        debug.textContent = `あと${event.detail.distance}m`;
+      });
+    } else {
+      console.error("The required element 'debug' was not found.");
+    }
+  });
+</script>
+
   
  <!--
 
