@@ -22,7 +22,7 @@
   arjs="sourceType: webcam; videoTexture: true; debugUIEnabled: false"
   renderer="logarithmicDepthBuffer: true;">
 
-  <a-camera gps-new-camera='minDistance: 15;maxDistance: 50000'></a-camera>
+  <a-camera gps-new-camera='minDistance: 20;maxDistance: 50000'></a-camera>
   
      <a-entity
       gltf-model="./assets/text.glb"
@@ -61,12 +61,12 @@
        gltf-model="./assets/text.glb"
        rotation="0 0 0"
        look-at="[gps-new-camera]"
-       scale="2 2 2"
+       scale="1 1 1"
        gps-new-entity-place="latitude: 37.95621633138597; longitude: 139.33767124371585"
        >
      </a-entity>
 
- <!--
+   <!--
 
     <a-entity
       gltf-model="./assets/applemove.glb"
