@@ -20,10 +20,9 @@
 <a-scene
   vr-mode-ui="enabled: false"
   arjs="sourceType: webcam; videoTexture: true; debugUIEnabled: false"
-  renderer="logarithmicDepthBuffer: true;"
-  gps-camera="minDistance: 10; maxDistance: 30">
+  renderer="logarithmicDepthBuffer: true;">
 
-  <a-camera gps-new-camera=''></a-camera>
+  <a-camera gps-camera="minDistance: 10; maxDistance: 30"></a-camera>
   
      <a-entity
       gltf-model="./assets/text.glb"
