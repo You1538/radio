@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html> 
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -7,6 +7,7 @@
     <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
     <script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"></script>
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
+    <script type='text/javascript'src='https://raw.githack.com/AR-js-org/AR.js/master/three.js/build/ar-threex-location-only.js'></script>
   </head>
   <body style="margin: 0; overflow: hidden;">
     <a-scene
@@ -16,10 +17,15 @@
     >
       <a-box
         material="color: red"
-        gps-entity-place="latitude: 37.956063578372586; longitude: 139.33794618109383;"
+        gps-new-entity-place="latitude: 37.956258448730615; longitude: 139.33750967800694;"
         scale="1 1 1"
       ></a-box>
-      <a-camera gps-camera="minDistance:5; maxDistance:100"> </a-camera>
+
+       <a-entity gltf-model="./assets/text.glb" potision="0 1 0" look-at="[gps-camera]" scale="1 1 1"
+            gps-new-entity-place="latitude: 37.956258448730615; longitude: 139.33750967800694;">
+        </a-entity>
+      
+      <a-camera gps-new-camera="minDistance:5; maxDistance:30"></a-camera>
     </a-scene>
   </body>
 </html>
