@@ -15,17 +15,28 @@
       embedded
       arjs="sourceType: webcam; debugUIEnabled: false;"
     >
-      <a-box
-        material="color: red"
-        gps-entity-place="latitude: 37.956258448730615; longitude: 139.33750967800694;"
-        scale="1 1 1"
-      ></a-box>
 
        <a-entity gltf-model="./assets/text.glb" potision="0 3 0" look-at="[gps-camera]" scale="0.2 0.2 0.2"
-            gps-entity-place="latitude: 37.956258448730615; longitude: 139.33750967800694;">
+            gps-entity-place="latitude: 37.95631016784721; longitude: 139.33755352847405">
+        </a-entity>
+
+      <a-entity gltf-model="./assets/shibatajo.glb" potision="0 3 0" scale="0.1 0.1 0.1"
+            gps-entity-place="latitude: 37.95623723234195; longitude: 139.33749611383607">
+        </a-entity>
+
+      <a-entity gltf-model="./assets/kinunoyuugetsu.glb" potision="0 3 0" scale="1 1 1"
+            gps-entity-place="latitude: 37.9561642967643; longitude: 139.33743231979383">
+        </a-entity>
+
+      <a-entity gltf-model="./assets/tsukiokamanju.glb" potision="0 3 0" scale="1 1 1"
+            gps-entity-place="latitude: 37.956090103602364; longitude: 139.33737012060269">
+        </a-entity>
+
+      <a-entity gltf-model="./assets/youkan.glb" potision="0 3 0" scale="1 1 1"
+            gps-entity-place="latitude: 37.95602974300854; longitude: 139.33731430081576">
         </a-entity>
       
-      <a-camera gps-camera="minDistance:5; maxDistance:30"></a-camera>
+      <a-camera gps-camera="minDistance:0; maxDistance:5"></a-camera>
     </a-scene>
   </body>
 </html>
