@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
+<head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Location-based AR.js demo</title>
+    <title>location-base AR</title>
     <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
     <script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"></script>
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
     <script type='text/javascript' src='https://raw.githack.com/AR-js-org/AR.js/master/three.js/build/ar-threex-location-only.js'></script>
-  </head>
+</head>
 
 <body>
     <a-scene
@@ -17,6 +17,8 @@
     embedded
     arjs="sourceType: webcam;debugUIEnabled: false;"
     renderer="logarithmicDepthBuffer: true">
+
+        <a-camera gps-camera rotation-reader></a-camera>
 
         <!-- 新発田市役所 -->
         <a-entity
@@ -26,49 +28,48 @@
         gps-entity-place="latitude: 37.94781383890853; longitude: 139.32706387291938">
         </a-entity>
 
-        <!-- 新発田城 -->
+        <!-- 新発田城
         <a-entity
         gltf-model="./assets/shibatajo.glb"
         rotation="0 0 0"
         scale="5 5 5"
         animation="property: rotation; to: 0 360 0; loop: true; dur: 10000; easing: linear;"
         gps-entity-place="latitude: 37.95493534310519; longitude: 139.32597092399263">
-        </a-entity>
+        </a-entity> -->
 
-        <!-- レストラン インダス -->
+        <!-- レストラン インダス
         <a-entity
         gltf-model="./assets/kingyodaiwa.glb"
         rotation="-30 0 0"
         scale="15 15 15"
         animation="property: rotation; to: -30 360 0; loop: true; dur: 10000; easing: linear;"
         gps-entity-place="latitude: 37.94734543175105; longitude: 139.3289264927443">
-        </a-entity>
+        </a-entity> -->
 
-        <!-- 五十公野 あやめ園 -->
+        <!-- 五十公野 あやめ園
         <a-entity
         gltf-model="./assets/kingyodaiwa.glb"
         rotation="0 0 0"
         scale="15 15 15"
         gps-entity-place="latitude: 37.937945135757346; longitude: 139.36088524817083">
-        </a-entity>
+        </a-entity> -->
 
-        <!-- 五十公野 運動場 -->
+        <!-- 五十公野 運動場
         <a-entity
         gltf-model="./assets/kingyodaiwa.glb"
         rotation="0 0 0"
         scale="15 15 15"
         gps-entity-place="latitude: 37.93674483232794; longitude: 139.3557529684019">
-        </a-entity>
+        </a-entity> -->
 
-        <!-- 月岡温泉 -->
+        <!-- 月岡温泉
         <a-entity
         gltf-model="./assets/tsukiokamanju.glb"
         rotation="0 0 0"
         scale="30 30 30"
         gps-entity-place="latitude: 37.88106458170879; longitude: 139.31095811420894">
-        </a-entity>
+        </a-entity>  -->
 
-        <a-camera gps-camera rotation-reader></a-camera>
 
     </a-scene>
 </body>
