@@ -16,13 +16,13 @@
     <a-scene vr-mode-ui="enabled: false" embedded arjs="sourceType: webcam;debugUIEnabled: false;"
         renderer="logarithmicDepthBuffer: true">
 
-        <a-camera gps-camera="minDistance:5; maxDistance:100000000"></a-camera>
+        <a-camera gps-camera="minDistance:5; maxDistance:100000000000"></a-camera>
 
         <!-- 新発田市役所 -->
         <a-entity
         gltf-model="./assets/text.glb"
-        position="0 60 0"
-        scale="5 5 5"
+        position="0 52 0"
+        scale="10 10 10"
         look-at="[gps-camera]"
         gps-entity-place="latitude: 37.94781383890853; longitude: 139.32706387291938">
         </a-entity>
@@ -30,9 +30,9 @@
         <!-- 新発田城 -->
         <a-entity
         gltf-model="./assets/shibatajo.glb"
-        position="0 0 0"
+        position="0 50 0"
         rotation="0 0 0"
-        scale="5 5 5"
+        scale="15 15 15"
         animation="property: rotation; to: 0 360 0; loop: true; dur: 10000; easing: linear;"
         gps-entity-place="latitude: 37.95493534310519; longitude: 139.32597092399263">
         </a-entity>
@@ -70,8 +70,8 @@
         gltf-model="./assets/tsukiokamanju.glb"
         position="0 53 0"
         rotation="0 0 0"
-        scale="10 10 10"
-        gps-entity-place="latitude: 37.9560452918284; longitude: 139.33728749857968">
+        scale="30 30 30"
+        gps-entity-place="latitude: 37.88106458170879; longitude: 139.31095811420894">
         </a-entity>
 
     </a-scene>
