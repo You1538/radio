@@ -20,7 +20,8 @@
 
     <a-camera gps-camera="minDistance:5; maxDistance:10000"></a-camera>
 
-    <a-light type="directional" color="#FFF" intensity="15" position="0 300 0"></a-light>
+    <a-light type="directional" color="#FFF" intensity="10" position="0 30 0"></a-light>
+    <a-light type="ambient" color="#FFF"> </a-light>
     <!--
     <a-light type="directional" color="#FFF" intensity="8" position="0 25 0"></a-light>
     <a-light type="directional" color="#FFF" intensity="8" position="0 50 0"></a-light>
@@ -49,9 +50,9 @@
         <!-- カナモノ -->
         <a-entity
             gltf-model="./assets2/pan.glb"
-            rotation="30 0 0"
+            rotation="-20 0 10"
             scale="10 10 10"
-            animation="property: rotation; to: 30 360 0; loop: true; dur: 10000; easing: linear;"
+            animation="property: rotation; to: -20 360 10; loop: true; dur: 10000; easing: linear;"
             gps-entity-place="latitude: 37.96009315435081; longitude: 139.33265243618476">
         </a-entity>
 
