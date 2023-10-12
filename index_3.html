@@ -19,7 +19,7 @@
     renderer="logarithmicDepthBuffer: true">
 
     <a-camera gps-camera="minDistance:5; maxDistance:10000"></a-camera>
-    <a-light type="ambient" color="#FFF"> </a-light>
+    <a-light type="directional" color="#FFF" intensity="10" position="0 50 0">
         
         <!-- 新発田市役所 -->
         <a-entity
@@ -39,10 +39,10 @@
             gps-entity-place="latitude: 37.9619308273555; longitude: 139.33365772556803">
         </a-entity>
 
-        <!-- 金物 -->
+        <!-- カナモノ -->
         <a-entity
             gltf-model="./assets2/pan.glb"
-            rotation="-30 0 0"
+            rotation="0 0 30"
             scale="10 10 10"
             look-at="[gps-camera]"
             gps-entity-place="latitude: 37.96009315435081; longitude: 139.33265243618476">
