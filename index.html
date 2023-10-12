@@ -20,9 +20,20 @@
 
     <a-camera gps-camera="minDistance:5; maxDistance:10000"></a-camera>
 
+    <a-light type="directional" color="#FFF" intensity="1" position="0 5 0"></a-light>
+    <a-light type="directional" color="#FFF" intensity="1" position="0 0 0"></a-light>
+    <a-light type="ambient" color="#FFF"> </a-light>
+    <!--
+    <a-light type="directional" color="#FFF" intensity="8" position="0 25 0"></a-light>
+    <a-light type="directional" color="#FFF" intensity="8" position="0 50 0"></a-light>
+    <a-light type="directional" color="#FFF" intensity="8" position="0 -25 0"></a-light>
+    <a-light type="directional" color="#FFF" intensity="8" position="0 -50 0"></a-light>
+    -->
+        
         <!-- 新発田市役所 -->
         <a-entity
             gltf-model="./assets2/text.glb"
+            position="0 170 0"
             scale="6 6 6"
             look-at="[gps-camera]"
             gps-entity-place="latitude: 37.94166315282544; longitude: 139.3361355563338">
@@ -32,45 +43,50 @@
         <a-entity
             gltf-model="./assets2/shibatajo.glb"
             rotation="0 0 0"
-            scale="5 5 5"
+            scale="4 4 4"
+            animation="property: rotation; to: 0 360 0; loop: true; dur: 15000; easing: linear;"
             gps-entity-place="latitude: 37.941993012345364; longitude: 139.33737016711308">
         </a-entity>
 
-        <!-- 金物 -->
+        <!-- カナモノ -->
         <a-entity
-            gltf-model="./assets2/kingyodaiwa.glb"
-            rotation="-30 0 0"
+            gltf-model="./assets2/pan.glb"
+            rotation="-20 0 10"
             scale="10 10 10"
-            animation="property: rotation; to: -30 360 0; loop: true; dur: 10000; easing: linear;"
+            animation="property: rotation; to: -20 360 10; loop: true; dur: 10000; easing: linear;"
             gps-entity-place="latitude: 37.941689655022735; longitude: 139.33539113832708">
         </a-entity>
 
         <!-- 五十公野 あやめ園 -->
         <a-entity
             gltf-model="./assets2/ayame.glb"
+            position="0 10 0"
             rotation="0 0 0"
-            scale="10 10 10"
+            scale="25 25 25"
             gps-entity-place="latitude: 37.93897807380977; longitude: 139.34627333165835">
         </a-entity>
 
         <!-- 五十公野 運動場 右 -->
         <a-entity
             gltf-model="./assets2/racket.glb"
+            position="0 80 0"
             rotation="43 0 0"
-            scale="17 17 17"
-            gps-entity-place="latitude: 37.937733778780796; longitude: 139.34518705051784">
+            scale="20 20 20"
+            animation="property: rotation; to: 43 360 0; loop: true; dur: 10000; easing: linear;"
+            gps-entity-place="latitude: 37.9373423273428; longitude: 139.34488126733922"">
         </a-entity>
          <!-- 五十公野 運動場 右中 -->
         <a-entity
             gltf-model="./assets2/SCball.glb"
             rotation="0 0 0"
             scale="30 30 30"
+            animation="property: rotation; to: 360 360 720; loop: true; dur: 10000; easing: linear;"
             gps-entity-place="latitude: 37.937733778780796; longitude: 139.34518705051784">
         </a-entity>
         <!-- 五十公野 運動場 右中 -->
         <a-entity
             gltf-model="./assets2/Tball.glb"
-            position="0 53 0"
+            position="0 120 0"
             rotation="0 0 0"
             scale="10 10 10"
             gps-entity-place="latitude: 37.937733778780796; longitude: 139.34518705051784">
@@ -78,22 +94,26 @@
         <!-- 五十公野 運動場 左中 -->
         <a-entity
             gltf-model="./assets2/BBbat.glb"
-            rotation="12 0 0"
+            position="0 30 0"
+            rotation="17 0 0"
             scale="6 6 6"
+            animation="property: rotation; to: 17 -360 0; loop: true; dur: 15000; easing: linear;"
             gps-entity-place="latitude: 37.93816898530797; longitude: 139.34529869008753">
         </a-entity>
         <!-- 五十公野 運動場 左 -->
         <a-entity
             gltf-model="./assets2/BBball.glb"
-            position="0 52 0"
-            rotation="0 0 0"
+            position="0 65 0"
+            rotation="0 30 0"
             scale="10 10 10"
+            animation="property: rotation; to: 0 30 360; loop: true; dur: 1000; easing: linear;"
             gps-entity-place="latitude: 37.938589095522694; longitude: 139.34509773886208">
         </a-entity>
 
         <!-- 月岡温泉 -->
         <a-entity
             gltf-model="./assets2/tsukiokamanju.glb"
+            position="0 20 0"
             rotation="0 0 0"
             scale="10 10 10"
             gps-entity-place="latitude: 37.93326895880289; longitude: 139.33806848746886">
@@ -101,7 +121,7 @@
         <!-- 月岡温泉 -->
         <a-entity
             gltf-model="./assets2/onsen.glb"
-            position="0 52.5 0"
+            position="0 180 0"
             rotation="0 0 0"
             scale="10 10 10"
             look-at="[gps-camera]"
