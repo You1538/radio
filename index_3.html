@@ -16,22 +16,16 @@
     vr-mode-ui="enabled: false"
     embedded
     arjs="sourceType: webcam;debugUIEnabled: false;"
-    renderer="logarithmicDepthBuffer: true">
+    renderer="logarithmicDepthBuffer: true"
+    light="color: #BBB; type: ambient; intensity: 4"
+    light="intensity: 2.4; castShadow: true" position="-0.5 1 1"
+        >
 
     <a-camera gps-camera="minDistance:5; maxDistance:10000"></a-camera>
-    <!--
-    <a-light type="directional" color="#FFF" intensity="1" position="0 5 0"></a-light>
-    <a-light type="directional" color="#FFF" intensity="1" position="0 0 0"></a-light>
-    <a-light type="ambient" color="#FFF"> </a-light>
-    
-    <a-light type="directional" color="#FFF" intensity="8" position="0 25 0"></a-light>
-    <a-light type="directional" color="#FFF" intensity="8" position="0 50 0"></a-light>
-    <a-light type="directional" color="#FFF" intensity="8" position="0 -25 0"></a-light>
-    <a-light type="directional" color="#FFF" intensity="8" position="0 -50 0"></a-light>
-    -->
+   <!--
     <a-entity light="color: #BBB; type: ambient; intensity: 4" data-aframe-default-light="" aframe-injected=""></a-entity>
     <a-entity light="intensity: 2.4; castShadow: true" position="-0.5 1 1" data-aframe-default-light="" aframe-injected=""></a-entity>
-
+    -->
         <!-- 新発田城 -->
         <a-entity
             gltf-model="./assets2/sakura.glb"
