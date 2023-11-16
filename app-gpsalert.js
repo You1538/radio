@@ -1,25 +1,11 @@
 function getLocation() {
-    // ダイアログを表示して位置情報の利用を確認
     const isPermissionGranted = window.confirm("位置情報の利用を許可しますか？");
 
     if (isPermissionGranted) {
         if (navigator.geolocation) {
-            // ユーザーに位置情報の利用を許可してもらう
             navigator.geolocation.getCurrentPosition(
-                // 位置情報取得成功時の処理
                 function(position) {
                     document.getElementById('scene').insertAdjacentHTML('beforeend', `
-                    <a-scene
-                    vr-mode-ui="enabled: false"
-                    embedded
-                    arjs="sourceType: webcam;debugUIEnabled: false;"
-                    renderer="logarithmicDepthBuffer: true"
-                    light="defaultLightsEnabled: false"
-                    >
-                
-                    <a-entity light="color: #BBB; type: ambient; intensity: 1.5" data-aframe-default-light="" aframe-injected=""></a-entity>
-                    <a-entity light="intensity: 1.2; castShadow: true" position="-0.5 1 1" data-aframe-default-light="" aframe-injected=""></a-entity>                
-
                     <a-camera gps-camera="minDistance:5; maxDistance:100"></a-camera> 
             
                     <!--0 職短 -->
@@ -244,11 +230,8 @@ function getLocation() {
                         animation="property: rotation; to: 0 360 0; loop: true; dur: 15000; easing: linear;"
                         gps-entity-place="latitude: 37.949142096886206; longitude: 139.3245144982879">
                     </a-entity>
-
-                    </a-scene>
             `);
                 },
-                // 位置情報取得失敗時の処理
                 function(error) {
                     console.error("位置情報の取得に失敗しました。エラーコード: " + error.code);
                     console.error("エラーメッセージ: " + error.message);
@@ -262,7 +245,6 @@ function getLocation() {
     }
 }
 
-// ページ読み込み時に位置情報の取得を試みる
 document.addEventListener("DOMContentLoaded", function() {
     getLocation();
 });
