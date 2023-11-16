@@ -32,8 +32,8 @@ document.getElementById('scene').insertAdjacentHTML('beforeend', `
         </a-entity>
 
         <!-- 5 レストラン インダス -->
-        <a-entity gltf-model="./assets/kare.glb" rotation="0 0 0" scale="4 4 4"
-            animation="property: rotation; to: 0 360 0; loop: true; dur: 15000; easing: linear;"
+        <a-entity gltf-model="./assets/kare.glb" rotation="-25 0 0" scale="4 4 4"
+            animation="property: rotation; to: -25 360 0; loop: true; dur: 15000; easing: linear;"
             gps-entity-place="latitude: 37.94734543175105; longitude: 139.3289264927443">
         </a-entity>
 
@@ -68,8 +68,8 @@ document.getElementById('scene').insertAdjacentHTML('beforeend', `
         </a-entity>
 
         <!-- 11 セキカワ カナモノ -->
-        <a-entity gltf-model="./assets/pan.glb" rotation="0 0 0" scale="1 1 1"
-            animation="property: rotation; to: 0 360 0; loop: true; dur: 15000; easing: linear;"
+        <a-entity gltf-model="./assets/pan.glb" rotation="-20 0 0" scale="1 1 1"
+            animation="property: rotation; to: -20 360 0; loop: true; dur: 15000; easing: linear;"
             gps-entity-place="latitude: 37.94907673030837; longitude: 139.32398490982246">
         </a-entity>
 
@@ -92,25 +92,25 @@ document.getElementById('scene').insertAdjacentHTML('beforeend', `
         </a-entity>
 
         <!-- 15 運動場 テニスラケット -->
-        <a-entity gltf-model="./assets/tenisuraketto.glb" rotation="0 0 0" scale="2 2 2"
-            animation="property: rotation; to: 0 360 0; loop: true; dur: 15000; easing: linear;"
-            gps-entity-place="latitude: 37.93674483232794; longitude: 139.3557529684019">
-        </a-entity>
-
-        <!-- 16 運動場 テニスボール -->
-        <a-entity gltf-model="./assets/tenisuboru.glb" rotation="0 0 0" scale="2 2 2"
-            animation="property: rotation; to: 0 360 0; loop: true; dur: 15000; easing: linear;"
-            gps-entity-place="latitude: 37.93674483232794; longitude: 139.3557529684019">
-        </a-entity>
-
-        <!-- 17 運動場 野球バット -->
-        <a-entity gltf-model="./assets/yakyuuboru.glb" rotation="30 0 0" scale="0.5 0.5 0.5"
+        <a-entity gltf-model="./assets/tenisuraketto.glb" rotation="30 0 0" scale="2 2 2"
             animation="property: rotation; to: 30 360 0; loop: true; dur: 15000; easing: linear;"
             gps-entity-place="latitude: 37.93674483232794; longitude: 139.3557529684019">
         </a-entity>
 
-        <!-- 18 運動場 野球ボール -->
-        <a-entity gltf-model="./assets/yakyuubatto.glb" rotation="0 0 0" scale="2 2 2"
+        <!-- 16 運動場 テニスボール -->
+        <a-entity gltf-model="./assets/tenisuboru.glb" rotation="0 0 0" scale="1 1 1"
+            animation="property: rotation; to: 0 360 0; loop: true; dur: 15000; easing: linear;"
+            gps-entity-place="latitude: 37.93674483232794; longitude: 139.3557529684019">
+        </a-entity>
+
+        <!-- 17 運動場 野球ボール -->
+        <a-entity gltf-model="./assets/yakyuuboru.glb" rotation="0 0 90" scale="1 1 1"
+            animation="property: rotation; to: 360 0 90; loop: true; dur: 15000; easing: linear;"
+            gps-entity-place="latitude: 37.93674483232794; longitude: 139.3557529684019">
+        </a-entity>
+
+        <!-- 18 運動場 野球バット -->
+        <a-entity gltf-model="./assets/yakyuubatto.glb" rotation="30 0 0" scale="0.5 0.5 0.5"
             animation="property: rotation; to: 0 360 0; loop: true; dur: 15000; easing: linear;"
             gps-entity-place="latitude: 37.93674483232794; longitude: 139.3557529684019">
         </a-entity>
