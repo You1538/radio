@@ -117,13 +117,13 @@ document.getElementById('scene').insertAdjacentHTML('beforeend', `
 
         <!-- 19 運動場 バレーボール -->
         <a-entity gltf-model="./assets/bareboru.glb" rotation="0 0 0" scale="1.5 1.5 1.5"
-            animation="property: rotation; to: 0 360 0; loop: true; dur: 15000; easing: linear;"
+            animation="property: rotation; to:360 360 360; loop: true; dur: 15000; easing: linear;"
             gps-entity-place="latitude: 37.93674483232794; longitude: 139.3557529684019">
         </a-entity>
 
         <!-- 20 月岡 -->
-        <a-entity gltf-model="./assets/onsen.glb" rotation="0 0 0" scale="2 2 2"
-            animation="property: rotation; to: 0 360 0; loop: true; dur: 15000; easing: linear;"
+        <a-entity gltf-model="./assets/onsen.glb" position="0 55 0" rotation="0 0 0" scale="2 2 2"
+            look-at="[gps-camera]"
             gps-entity-place="latitude: 37.88106458170879; longitude: 139.31095811420894">
         </a-entity>
 
