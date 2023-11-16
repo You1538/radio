@@ -1,255 +1,30 @@
-function getLocation() {
-    // ダイアログを表示して位置情報の利用を確認
-    const isPermissionGranted = window.confirm("位置情報の利用を許可しますか？");
+<!DOCTYPE html>
+<html>
 
-    if (isPermissionGranted) {
-        if (navigator.geolocation) {
-            // ユーザーに位置情報の利用を許可してもらう
-            navigator.geolocation.getCurrentPosition(
-                // 位置情報取得成功時の処理
-                function(position) {
-                    document.getElementById('scene').insertAdjacentHTML('beforeend', `
-                    <a-camera gps-camera="minDistance:5; maxDistance:100"></a-camera> 
-            
-                    <!--0 職短 -->
-                    <a-entity
-                        gltf-model="./assets/sakura.glb"
-                        rotation="0 0 0"
-                        scale="2 2 2"
-                        animation="property: rotation; to: 0 360 0; loop: true; dur: 15000; easing: linear;"
-                        gps-entity-place="latitude: 37.95623964531757; longitude: 139.3371717973987">
-                    </a-entity>
-                    
-                    <!-- 1 新発田市役所 -->
-                    <a-entity
-                        gltf-model="./assets/text.glb"
-                        rotation="0 0 0"
-                        scale="2 2 2"
-                        animation="property: rotation; to: 0 360 0; loop: true; dur: 15000; easing: linear;"
-                        gps-entity-place="latitude: 37.94781383890853; longitude: 139.32706387291938">
-                    </a-entity>
-            
-                    <!-- 2 新発田城 -->
-                    <a-entity
-                        gltf-model="./assets/shibatajo.glb"
-                        rotation="0 0 0"
-                        scale="1 1 1"
-                        animation="property: rotation; to: 0 360 0; loop: true; dur: 15000; easing: linear;"
-                        gps-entity-place="latitude: 37.95493534310519; longitude: 139.32597092399263">
-                    </a-entity>
-            
-                    <!-- 3 蕗谷虹児記念館 -->
-                    <a-entity
-                        gltf-model="./assets/hukiyakouji.glb"
-                        rotation="0 0 0"
-                        scale="0.5 0.5 0.5"
-                        animation="property: rotation; to: 0 360 0; loop: true; dur: 15000; easing: linear;"
-                        gps-entity-place="latitude: 37.95177567198981; longitude: 139.32727454199866">
-                    </a-entity>
-            
-                    <!-- 4 結城堂 -->
-                    <a-entity
-                        gltf-model="./assets/.glb"
-                        rotation="0 0 0"
-                        scale="2 2 2"
-                        animation="property: rotation; to: 0 360 0; loop: true; dur: 15000; easing: linear;"
-                        gps-entity-place="latitude: 37.880347861691504; longitude: 139.30914421468543">
-                    </a-entity>
-            
-                    <!-- 5 レストラン インダス -->
-                    <a-entity
-                        gltf-model="./assets/kare.glb"
-                        rotation="-25 0 0"
-                        scale="4 4 4"
-                        animation="property: rotation; to: -25 360 0; loop: true; dur: 15000; easing: linear;"
-                        gps-entity-place="latitude: 37.94734543175105; longitude: 139.3289264927443">
-                    </a-entity>
-            
-                    <!-- 6 山口時計眼鏡店 -->
-                    <a-entity
-                        gltf-model="./assets/megane.glb"
-                        rotation="0 0 0"
-                        scale="2 2 2"
-                        animation="property: rotation; to: 0 360 0; loop: true; dur: 15000; easing: linear;"
-                        gps-entity-place="latitude: 37.94852035044161; longitude: 139.3249651375072">
-                    </a-entity>
-            
-                    <!-- 7 和泉屋 -->
-                    <a-entity
-                        gltf-model="./assets/mitarashi.glb"
-                        rotation="0 0 0"
-                        scale="2 2 2"
-                        animation="property: rotation; to: 0 360 0; loop: true; dur: 15000; easing: linear;"
-                        gps-entity-place="latitude: 37.94709514287901; longitude: 139.32938184552992">
-                    </a-entity>
-            
-                    <!-- 8 珈琲 詩織 -->
-                    <a-entity
-                        gltf-model="./assets/melonsoda.glb"
-                        rotation="0 0 0"
-                        scale="1 1 1"
-                        animation="property: rotation; to: 0 360 0; loop: true; dur: 15000; easing: linear;"
-                        gps-entity-place="latitude: 37.9469988050018; longitude: 139.3304161471393">
-                    </a-entity>
-            
-                    <!-- 9 HOT BOX -->
-                    <a-entity
-                        gltf-model="./assets/kuruma.glb"
-                        rotation="0 0 0"
-                        scale="2 2 2"
-                        animation="property: rotation; to: 0 360 0; loop: true; dur: 15000; easing: linear;"
-                        gps-entity-place="latitude: 37.947787717281756; longitude: 139.3263289383618">
-                    </a-entity>
-            
-                    <!-- 10 翁屋 -->
-                    <a-entity
-                        gltf-model="./assets/kinunoyuugetsu.glb"
-                        rotation="0 0 0"
-                        scale="2 2 2"
-                        animation="property: rotation; to: 0 360 0; loop: true; dur: 15000; easing: linear;"
-                        gps-entity-place="latitude: 37.94871466157485; longitude: 139.3243181903153">
-                    </a-entity>
-            
-                    <!-- 11 セキカワ カナモノ -->
-                    <a-entity
-                        gltf-model="./assets/pan.glb"
-                        rotation="-20 0 0"
-                        scale="1 1 1"
-                        animation="property: rotation; to: -20 360 0; loop: true; dur: 15000; easing: linear;"
-                        gps-entity-place="latitude: 37.94907673030837; longitude: 139.32398490982246">
-                    </a-entity>
-            
-                    <!-- 12 COCOLATTE Café -->
-                    <a-entity
-                        gltf-model="./assets/cafelatte.glb"
-                        rotation="0 0 0"
-                        scale="1 1 1"
-                        animation="property: rotation; to: 0 360 0; loop: true; dur: 15000; easing: linear;"
-                        gps-entity-place="latitude: 37.9474793329246; longitude: 139.32820394864558">
-                    </a-entity>
-            
-                    <!-- 13 煉瓦屋 -->
-                    <a-entity
-                        gltf-model="./assets/kurimusoda.glb"
-                        rotation="0 0 0"
-                        scale="1 1 1"
-                        animation="property: rotation; to: 0 360 0; loop: true; dur: 15000; easing: linear;"
-                        gps-entity-place="latitude: 37.94889850563191; longitude: 139.3243090612117">
-                    </a-entity>
-            
-                    <!-- 14 五十公野公園(あやめ園) -->
-                    <a-entity
-                        gltf-model="./assets/ayame.glb"
-                        rotation="0 0 0"
-                        scale="2 2 2"
-                        animation="property: rotation; to: 0 360 0; loop: true; dur: 15000; easing: linear;"
-                        gps-entity-place="latitude: 37.937945135757346; longitude: 139.36088524817083">
-                    </a-entity>
-            
-                    <!-- 15 運動場 テニスラケット -->
-                    <a-entity
-                        gltf-model="./assets/tenisuraketto.glb"
-                        rotation="30 0 0"
-                        scale="2 2 2"
-                        animation="property: rotation; to: 30 360 0; loop: true; dur: 15000; easing: linear;"
-                        gps-entity-place="latitude: 37.93674483232794; longitude: 139.3557529684019">
-                    </a-entity>
-            
-                    <!-- 16 運動場 テニスボール -->
-                    <a-entity
-                        gltf-model="./assets/tenisuboru.glb"
-                        rotation="0 0 0"
-                        scale="1 1 1"
-                        animation="property: rotation; to: 0 360 0; loop: true; dur: 15000; easing: linear;"
-                        gps-entity-place="latitude: 37.93674483232794; longitude: 139.3557529684019">
-                    </a-entity>
-            
-                    <!-- 17 運動場 野球ボール -->
-                    <a-entity
-                        gltf-model="./assets/yakyuuboru.glb"
-                        rotation="0 0 90"
-                        scale="1 1 1"
-                        animation="property: rotation; to: 360 0 90; loop: true; dur: 15000; easing: linear;"
-                        gps-entity-place="latitude: 37.93674483232794; longitude: 139.3557529684019">
-                    </a-entity>
-            
-                    <!-- 18 運動場 野球バット -->
-                    <a-entity
-                        gltf-model="./assets/yakyuubatto.glb"
-                        rotation="30 0 0"
-                        scale="0.5 0.5 0.5"
-                        animation="property: rotation; to: 30 360 0; loop: true; dur: 15000; easing: linear;"
-                        gps-entity-place="latitude: 37.93674483232794; longitude: 139.3557529684019">
-                    </a-entity>
-            
-                    <!-- 19 運動場 バレーボール -->
-                    <a-entity
-                        gltf-model="./assets/bareboru.glb"
-                        rotation="0 0 0"
-                        scale="1.5 1.5 1.5"
-                        animation="property: rotation; to:360 360 360; loop: true; dur: 15000; easing: linear;"
-                        gps-entity-place="latitude: 37.93674483232794; longitude: 139.3557529684019">
-                    </a-entity>
-            
-                    <!-- 20 月岡 -->
-                    <a-entity
-                        gltf-model="./assets/onsen.glb"
-                        position="0 55 0"
-                        rotation="0 0 0"
-                        scale="2 2 2"
-                        look-at="[gps-camera]"
-                        gps-entity-place="latitude: 37.88106458170879; longitude: 139.31095811420894">
-                    </a-entity>
-            
-                    <!-- 21 月岡 -->
-                    <a-entity
-                        gltf-model="./assets/tsukiokamanju.glb"
-                        rotation="0 0 0"
-                        scale="2 2 2"
-                        animation="property: rotation; to: 0 360 0; loop: true; dur: 15000; easing: linear;"
-                        gps-entity-place="latitude: 37.88106458170879; longitude: 139.31095811420894">
-                    </a-entity>
-            
-                    <!-- 22 カトリック教会 -->
-                    <a-entity gltf-model="./assets/katoriku.glb"
-                        rotation="0 0 0"
-                        scale="0.3 0.3 0.3"
-                        animation="property: rotation; to: 0 360 0; loop: true; dur: 15000; easing: linear;"
-                        gps-entity-place="latitude: 37.95056125833598; longitude: 139.3286530981394">
-                    </a-entity>
-            
-                    <!-- 23 足軽長屋 -->
-                    <a-entity
-                        gltf-model="./assets/ashigaru.glb"
-                        rotation="0 0 0"
-                        scale="0.2 0.2 0.2"
-                        gps-entity-place="latitude: 37.94355964206283; longitude: 139.32894797266616">
-                    </a-entity>
-            
-                    <!-- 24 鮨 登喜和 -->
-                    <a-entity
-                        gltf-model="./assets/sushiglb"
-                        rotation="0 0 0" scale="2 2 2"
-                        animation="property: rotation; to: 0 360 0; loop: true; dur: 15000; easing: linear;"
-                        gps-entity-place="latitude: 37.949142096886206; longitude: 139.3245144982879">
-                    </a-entity>
-            `);
-                },
-                // 位置情報取得失敗時の処理
-                function(error) {
-                    console.error("位置情報の取得に失敗しました。エラーコード: " + error.code);
-                    console.error("エラーメッセージ: " + error.message);
-                }
-            );
-        } else {
-            console.error("このブラウザは位置情報の取得をサポートしていません。");
-        }
-    } else {
-        console.log("位置情報の利用が拒否されました。");
-    }
-}
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>JavaScriptTest</title>
+    <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
+    <script type='text/javascript' src='https://raw.githack.com/AR-js-org/AR.js/master/three.js/build/ar-threex-location-only.js'></script>
+</head>
 
-// ページ読み込み時に位置情報の取得を試みる
-document.addEventListener("DOMContentLoaded", function() {
-    getLocation();
-});
+<body>
+    <a-scene id="scene"
+    vr-mode-ui="enabled: false"
+    embedded
+    arjs="sourceType: webcam;debugUIEnabled: false;"
+    renderer="logarithmicDepthBuffer: true"
+    light="defaultLightsEnabled: false"
+    >
+
+    <a-entity light="color: #BBB; type: ambient; intensity: 1.5" data-aframe-default-light="" aframe-injected=""></a-entity>
+    <a-entity light="intensity: 1.2; castShadow: true" position="-0.5 1 1" data-aframe-default-light="" aframe-injected=""></a-entity>
+
+    </a-scene>
+    <script src="app-gpsalert.js"></script>
+</body>
+
+</html>
