@@ -1,5 +1,7 @@
 document.getElementById('scene').insertAdjacentHTML('beforeend', `
-<!--0 職短 -->
+        <a-camera gps-camera="minDistance:5; maxDistance:100"></a-camera> 
+
+        <!--0 職短 -->
         <a-entity gltf-model="./assets/sakura.glb" rotation="0 0 0" scale="2 2 2"
             animation="property: rotation; to: 0 360 0; loop: true; dur: 15000; easing: linear;"
             gps-entity-place="latitude: 37.95623964531757; longitude: 139.3371717973987">
@@ -12,13 +14,13 @@ document.getElementById('scene').insertAdjacentHTML('beforeend', `
         </a-entity>
 
         <!-- 2 新発田城 -->
-        <a-entity gltf-model="./assets/shibatajo.glb" rotation="0 0 0" scale="2 2 2"
+        <a-entity gltf-model="./assets/shibatajo.glb" rotation="0 0 0" scale="1 1 1"
             animation="property: rotation; to: 0 360 0; loop: true; dur: 15000; easing: linear;"
             gps-entity-place="latitude: 37.95493534310519; longitude: 139.32597092399263">
         </a-entity>
 
         <!-- 3 蕗谷虹児記念館 -->
-        <a-entity gltf-model="./assets/hukiyakouji.glb" rotation="0 0 0" scale="2 2 2"
+        <a-entity gltf-model="./assets/hukiyakouji.glb" rotation="0 0 0" scale="0.5 0.5 0.5"
             animation="property: rotation; to: 0 360 0; loop: true; dur: 15000; easing: linear;"
             gps-entity-place="latitude: 37.95177567198981; longitude: 139.32727454199866">
         </a-entity>
@@ -30,7 +32,7 @@ document.getElementById('scene').insertAdjacentHTML('beforeend', `
         </a-entity>
 
         <!-- 5 レストラン インダス -->
-        <a-entity gltf-model="./assets/kare.glb" rotation="0 0 0" scale="2 2 2"
+        <a-entity gltf-model="./assets/kare.glb" rotation="0 0 0" scale="4 4 4"
             animation="property: rotation; to: 0 360 0; loop: true; dur: 15000; easing: linear;"
             gps-entity-place="latitude: 37.94734543175105; longitude: 139.3289264927443">
         </a-entity>
@@ -48,7 +50,7 @@ document.getElementById('scene').insertAdjacentHTML('beforeend', `
         </a-entity>
 
         <!-- 8 珈琲 詩織 -->
-        <a-entity gltf-model="./assets/melonsoda.glb" rotation="0 0 0" scale="2 2 2"
+        <a-entity gltf-model="./assets/melonsoda.glb" rotation="0 0 0" scale="1 1 1"
             animation="property: rotation; to: 0 360 0; loop: true; dur: 15000; easing: linear;"
             gps-entity-place="latitude: 37.9469988050018; longitude: 139.3304161471393">
         </a-entity>
@@ -66,19 +68,19 @@ document.getElementById('scene').insertAdjacentHTML('beforeend', `
         </a-entity>
 
         <!-- 11 セキカワ カナモノ -->
-        <a-entity gltf-model="./assets/pan.glb" rotation="0 0 0" scale="2 2 2"
+        <a-entity gltf-model="./assets/pan.glb" rotation="0 0 0" scale="1 1 1"
             animation="property: rotation; to: 0 360 0; loop: true; dur: 15000; easing: linear;"
             gps-entity-place="latitude: 37.94907673030837; longitude: 139.32398490982246">
         </a-entity>
 
         <!-- 12 COCOLATTE Café -->
-        <a-entity gltf-model="./assets/cafelatte.glb" rotation="0 0 0" scale="2 2 2"
+        <a-entity gltf-model="./assets/cafelatte.glb" rotation="0 0 0" scale="1 1 1"
             animation="property: rotation; to: 0 360 0; loop: true; dur: 15000; easing: linear;"
             gps-entity-place="latitude: 37.9474793329246; longitude: 139.32820394864558">
         </a-entity>
 
         <!-- 13 煉瓦屋 -->
-        <a-entity gltf-model="./assets/kurimusoda.glb" rotation="0 0 0" scale="2 2 2"
+        <a-entity gltf-model="./assets/kurimusoda.glb" rotation="0 0 0" scale="1 1 1"
             animation="property: rotation; to: 0 360 0; loop: true; dur: 15000; easing: linear;"
             gps-entity-place="latitude: 37.94889850563191; longitude: 139.3243090612117">
         </a-entity>
@@ -102,8 +104,8 @@ document.getElementById('scene').insertAdjacentHTML('beforeend', `
         </a-entity>
 
         <!-- 17 運動場 野球バット -->
-        <a-entity gltf-model="./assets/yakyuuboru.glb" rotation="0 0 0" scale="2 2 2"
-            animation="property: rotation; to: 0 360 0; loop: true; dur: 15000; easing: linear;"
+        <a-entity gltf-model="./assets/yakyuuboru.glb" rotation="30 0 0" scale="0.5 0.5 0.5"
+            animation="property: rotation; to: 30 360 0; loop: true; dur: 15000; easing: linear;"
             gps-entity-place="latitude: 37.93674483232794; longitude: 139.3557529684019">
         </a-entity>
 
@@ -114,7 +116,7 @@ document.getElementById('scene').insertAdjacentHTML('beforeend', `
         </a-entity>
 
         <!-- 19 運動場 バレーボール -->
-        <a-entity gltf-model="./assets/bareboru.glb" rotation="0 0 0" scale="2 2 2"
+        <a-entity gltf-model="./assets/bareboru.glb" rotation="0 0 0" scale="1.5 1.5 1.5"
             animation="property: rotation; to: 0 360 0; loop: true; dur: 15000; easing: linear;"
             gps-entity-place="latitude: 37.93674483232794; longitude: 139.3557529684019">
         </a-entity>
@@ -132,14 +134,13 @@ document.getElementById('scene').insertAdjacentHTML('beforeend', `
         </a-entity>
 
         <!-- 22 カトリック教会 -->
-        <a-entity gltf-model="./assets/katoriku.glb" rotation="0 0 0" scale="2 2 2"
+        <a-entity gltf-model="./assets/katoriku.glb" rotation="0 0 0" scale="0.3 0.3 0.3"
             animation="property: rotation; to: 0 360 0; loop: true; dur: 15000; easing: linear;"
             gps-entity-place="latitude: 37.95056125833598; longitude: 139.3286530981394">
         </a-entity>
 
         <!-- 23 足軽長屋 -->
-        <a-entity gltf-model="./assets/ashigaru.glb" rotation="0 0 0" scale="2 2 2"
-            animation="property: rotation; to: 0 360 0; loop: true; dur: 15000; easing: linear;"
+        <a-entity gltf-model="./assets/ashigaru.glb" rotation="0 0 0" scale=0.2 0.2 0.2"
             gps-entity-place="latitude: 37.94355964206283; longitude: 139.32894797266616">
         </a-entity>
 
