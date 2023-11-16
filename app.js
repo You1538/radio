@@ -111,7 +111,7 @@ document.getElementById('scene').insertAdjacentHTML('beforeend', `
 
         <!-- 18 運動場 野球バット -->
         <a-entity gltf-model="./assets/yakyuubatto.glb" rotation="30 0 0" scale="0.5 0.5 0.5"
-            animation="property: rotation; to: 0 360 0; loop: true; dur: 15000; easing: linear;"
+            animation="property: rotation; to: 30 360 0; loop: true; dur: 15000; easing: linear;"
             gps-entity-place="latitude: 37.93674483232794; longitude: 139.3557529684019">
         </a-entity>
 
