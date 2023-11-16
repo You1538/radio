@@ -233,12 +233,15 @@ function getLocation() {
             `);
                 },
                 function(error) {
-                    console.error("位置情報の取得に失敗しました。エラーコード: " + error.code);
-                    console.error("エラーメッセージ: " + error.message);
+                    const errorMessage = "位置情報の取得に失敗しました。エラーコード: " + error.code + "\nエラーメッセージ: " + error.message;
+                    alert(errorMessage);
+                    console.error(errorMessage);
                 }
             );
         } else {
-            console.error("このブラウザは位置情報の取得をサポートしていません。");
+            const errorMessage = "このブラウザは位置情報の取得をサポートしていません。";
+            alert(errorMessage);
+            console.error(errorMessage);
         }
     } else {
         console.log("位置情報の利用が拒否されました。");
