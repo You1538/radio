@@ -244,6 +244,8 @@ function getLocation() {
             console.error(errorMessage);
         }
     } else {
+        const errorMessage = "位置情報の利用が拒否されました。";
+        alert(errorMessage);
         console.log("位置情報の利用が拒否されました。");
     }
 }
