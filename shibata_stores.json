@@ -6,7 +6,7 @@
             "category": "観光",
             "model": "assets/shibatajo.glb",
             "rotation": "0 0 0",
-            "scale": "1 1 1",
+            "scale": "0.3 0.3 0.3",
             "animation": "",
             "latitude": "37.95493534310519",
             "longitude": "139.32597092399263"
