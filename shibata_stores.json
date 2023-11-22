@@ -1,0 +1,34 @@
+{
+    "caption":"SHIBATA_street",
+    "members":[
+        {
+            "name": "新発田城",
+            "category": "観光",
+            "model": "assets/shibatajo.glb",
+            "rotation": "0 0 0",
+            "scale": "1 1 1",
+            "animation": "",
+            "latitude": "37.95493534310519",
+            "longitude": "139.32597092399263"
+        },
+        {
+            "name": "職短芝生",
+            "category": "観光",
+            "model": "assets/sakura.glb",
+            "rotation": "0 0 0",
+            "scale": "1 1 1",
+            "animation": "",
+            "latitude": "37.95623964531757",
+            "longitude": "139.3371717973987"
+        },
+        {"name":"職短教室",
+        "category":"観光",
+        "model": "assets/kingyodaiwa.glb",
+        "rotation": "0 0 0",
+        "scale": "1 1 1",
+        "animation": "",
+        "latitude": "37.956133508683955",
+        "longitude": "139.337817933143"
+        }
+    ]
+}
